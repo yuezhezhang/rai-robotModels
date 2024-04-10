@@ -32,13 +32,19 @@ gripper (robotiq_base){
     Q:<d(180 0 1 0) d(90 0 0 1) t(0 0 -.135)>
     , size:[.03], color:[.9 .9 .9], logical:{gripper:True} }
 palm (robotiq_base)	{
-    Q:<d(90 1 0 0) t(0 .075 .0)>,
-    shape:capsule color:[1.,1.,1.,.2] size:[.11 .038], contact:-2 }
+    Q:<d(90 1 0 0) t(0 .085 .0)>,
+    shape:capsule color:[1.,1.,1.,.2] size:[.11 .02], contact:-2 }
+palm_2 (robotiq_base)	{
+    Q:<d(90 1 0 0) t(0 .04 .0)>,
+    shape:capsule color:[1.,1.,1.,.2] size:[.06 .02], contact:-2 }
+palm_3 (robotiq_base)	{
+    Q:<d(90 1 0 0) t(0 .06 .0)>,
+    shape:capsule color:[1.,1.,1.,.2] size:[.11 .02], contact:-2 }
 finger1 (right_inner_finger){
     Q:[.0 -.009 .035],
     shape:capsule, size:[.02, .02], color:[1. 1. 1. .2], contact:-3 }
 finger2 (left_inner_finger){
-    Q:[.0 -.009 .033],
+    Q:[.0 -.009 .035],
     shape:capsule, size:[.02, .02], color:[1. 1. 1. .2], contact:-3 }
 
 grippercenter (robotiq_base){
